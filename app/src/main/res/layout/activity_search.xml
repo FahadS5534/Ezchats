@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:background="#0F1828">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#0F1828"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="143dp"
+            android:layout_marginBottom="176dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Search Chats"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/chats"
+            android:src="@drawable/icon_back"
+            app:tint="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="373dp"
+
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="71dp"
+        android:hint="Search"
+        app:boxStrokeColor="#375FFF"
+        app:endIconMode="clear_text"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="#375FFF"
+
+
+
+        tools:ignore="ExtraText">>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="10">
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="400dp"
+
+        android:layout_height="549dp"
+        android:layout_below="@+id/textInputLayout1"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="21dp" />
+
+
+</RelativeLayout>

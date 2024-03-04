@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0F1828"
+        >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:contentDescription="TODO"
+
+                app:srcCompat="@drawable/img_2" />
+
+            <TextView
+                android:id="@+id/firstNameR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="79dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="206dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="168dp"
+                android:layout_height="29dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="173dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:fontFamily="@font/poppins_light"
+                android:text="9773049410"
+                android:textColor="#546E7A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/cardView"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

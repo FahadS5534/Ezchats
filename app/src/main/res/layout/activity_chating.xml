@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chating"
+    android:background="#1B2B48">
+
+    <RelativeLayout
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#0F1828"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/chats"
+            android:src="@drawable/icon_back"
+
+
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="4dp"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="TODO"
+            app:layout_constraintVertical_bias="0.36"
+            app:srcCompat="@drawable/img_2" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginEnd="-15dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:fontFamily="@font/poppins_bold"
+            android:text="UserName"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar1"
+        android:layout_above="@+id/bottom_layout"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:layout_alignParentBottom="true"
+      android:padding="8dp"
+      android:id="@+id/bottom_layout">
+
+
+      <EditText
+          android:id="@+id/editText"
+          android:layout_width="318dp"
+          android:layout_height="71dp"
+          android:layout_alignParentBottom="true"
+          android:layout_centerInParent="true"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginRight="11dp"
+          android:layout_marginBottom="10dp"
+          android:layout_toLeftOf="@+id/messageSend"
+          android:background="@drawable/rounded_editext"
+          android:cursorVisible="true"
+          android:elevation="4dp"
+          android:fontFamily="@font/poppins_light"
+          android:hapticFeedbackEnabled="true"
+          android:hint="Write a message"
+          android:isScrollContainer="true"
+          android:minHeight="48dp"
+          android:padding="10dp"
+          android:textColorHint="#7986CB" />
+
+      <ImageButton
+          android:id="@+id/messageSend"
+          android:layout_width="56dp"
+          android:layout_height="58dp"
+          android:layout_alignParentEnd="true"
+          android:layout_centerInParent="true"
+          android:background="@drawable/imagebutton_background"
+          android:contentDescription="@string/get_otp"
+          android:hapticFeedbackEnabled="true"
+          android:src="@drawable/icon_send"></ImageButton>
+
+  </RelativeLayout>
+</RelativeLayout>

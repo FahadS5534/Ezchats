@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "965848385572",
+    "project_id": "ezchats-8b63d",
+    "storage_bucket": "ezchats-8b63d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965848385572:android:6e5cc5c3ff5a66347bf0b1",
+        "android_client_info": {
+          "package_name": "com.example.ezchats"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgrjpTzQllYWfJD7b_6lesrTOpLW_D6yM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
